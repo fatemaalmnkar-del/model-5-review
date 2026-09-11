@@ -27,12 +27,12 @@ function App() {
           Count is {count}
         </button>
         <button data-testid="test-api" onClick={() => {
-          fetch('http://localhost:3001/api/server')
+          fetch('http://localhost:5000/api/server')
             .then(response => response.json())
             .then(data => document.getElementById('message').textContent = data.message)
         }}> Test Api</button>
         <button data-testid="test-api2" onClick={() => {
-          fetch('http://localhost:3001/api/')
+          fetch('http://localhost:5000/api/')
             .then(response => response.json())
             .then(data => document.getElementById('message').textContent = data.message)
         }}> Test Api2</button>

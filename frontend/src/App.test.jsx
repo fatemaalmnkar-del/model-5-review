@@ -38,7 +38,7 @@ describe('App', () => {
     });
 
     expect(global.fetch).toHaveBeenCalledWith(
-      'http://localhost:3001/api/server'
+      'http://localhost:5000/api/server'
     );
   });
 
@@ -62,7 +62,7 @@ describe('App', () => {
     });
 
     expect(global.fetch).toHaveBeenCalledWith(
-      'http://localhost:3001/api/'
+      'http://localhost:5000/api/'
     );
   });
 
